@@ -39,6 +39,7 @@
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
+            lblContact = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -70,6 +71,7 @@
             linkLabel1.TabIndex = 16;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "No Account Yet?";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // cbxShow
             // 
@@ -78,7 +80,7 @@
             cbxShow.Location = new Point(22, 180);
             cbxShow.Name = "cbxShow";
             cbxShow.Size = new Size(122, 21);
-            cbxShow.TabIndex = 15;
+            cbxShow.TabIndex = 2;
             cbxShow.Text = "Show password";
             cbxShow.UseVisualStyleBackColor = true;
             cbxShow.CheckedChanged += checkBox1_CheckedChanged;
@@ -88,9 +90,10 @@
             btnLogin.Location = new Point(93, 207);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
-            btnLogin.TabIndex = 14;
+            btnLogin.TabIndex = 3;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // tbxPassword
             // 
@@ -98,14 +101,15 @@
             tbxPassword.Name = "tbxPassword";
             tbxPassword.PasswordChar = '●';
             tbxPassword.Size = new Size(229, 27);
-            tbxPassword.TabIndex = 13;
+            tbxPassword.TabIndex = 1;
             // 
             // tbxUsername
             // 
             tbxUsername.Location = new Point(19, 66);
             tbxUsername.Name = "tbxUsername";
             tbxUsername.Size = new Size(229, 27);
-            tbxUsername.TabIndex = 12;
+            tbxUsername.TabIndex = 0;
+            tbxUsername.TextChanged += tbxUsername_TextChanged;
             // 
             // pictureBox2
             // 
@@ -149,22 +153,36 @@
             label1.TabIndex = 0;
             label1.Text = "Username";
             // 
+            // lblContact
+            // 
+            lblContact.AutoSize = true;
+            lblContact.Location = new Point(772, 609);
+            lblContact.Name = "lblContact";
+            lblContact.Size = new Size(80, 20);
+            lblContact.TabIndex = 8;
+            lblContact.TabStop = true;
+            lblContact.Text = "Contact Us";
+            lblContact.LinkClicked += lblContact_LinkClicked;
+            // 
             // LoginPage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(864, 638);
+            Controls.Add(lblContact);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "LoginPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            FormClosing += LoginPage_FormClosing;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -179,5 +197,6 @@
         private Button btnLogin;
         private TextBox tbxPassword;
         private TextBox tbxUsername;
+        private LinkLabel lblContact;
     }
 }
