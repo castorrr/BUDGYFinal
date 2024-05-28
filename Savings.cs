@@ -31,7 +31,7 @@ namespace BUDGY_2._0
         decimal savings;
         decimal totalGoals;
         decimal savingGoals;
-      
+
         public Savings()
         {
             InitializeComponent();
@@ -67,7 +67,7 @@ namespace BUDGY_2._0
         {
             int ID = GlobalVariables.UserID;
             string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\cprogs\\OOP2\\BUDGY 2.0\\bin\\Debug\\BUDGY DATABASE.accdb";
-            string queryHistory = "SELECT Savings FROM Savings WHERE ID = @UserID"; // Replace ExpensesName with the actual column name used for ordering
+            string queryHistory = "SELECT Savings, Date FROM SavingsHistory WHERE ID = @UserID"; // Replace ExpensesName with the actual column name used for ordering
             string queryGoals = "SELECT Name, Price, SavingGoalsID FROM SavingGoals WHERE ID = @UserID";
             string querySavings = "SELECT Savings FROM Savings WHERE ID = @UserID";
             string querySGValue = "SELECT SavingGoals FROM Savings WHERE ID = @UserID";
@@ -158,11 +158,11 @@ namespace BUDGY_2._0
                 myConn.Close();
             }
 
-            if(totalGoals <= 0)
+            if (totalGoals <= 0)
                 GlobalVariables.percentage = 0;
             else
                 GlobalVariables.percentage = Convert.ToInt32((savingGoals / totalGoals) * 100);
-           
+
 
             pieChart1_Load_2(this, EventArgs.Empty);
         }
@@ -372,6 +372,11 @@ namespace BUDGY_2._0
                     pieSeries.DataLabelsPaint = new SolidColorPaint { Color = whiteColor };
                 }
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

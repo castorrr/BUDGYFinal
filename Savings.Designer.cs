@@ -57,7 +57,7 @@
             // 
             lblSavings.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblSavings.ForeColor = SystemColors.ButtonHighlight;
-            lblSavings.Location = new Point(85, 162);
+            lblSavings.Location = new Point(83, 135);
             lblSavings.Name = "lblSavings";
             lblSavings.Size = new Size(145, 28);
             lblSavings.TabIndex = 0;
@@ -70,7 +70,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(101, 124);
+            label2.Location = new Point(99, 97);
             label2.Name = "label2";
             label2.Size = new Size(117, 38);
             label2.TabIndex = 1;
@@ -81,7 +81,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(77, 315);
+            label3.Location = new Point(75, 288);
             label3.Name = "label3";
             label3.Size = new Size(185, 38);
             label3.TabIndex = 5;
@@ -162,7 +162,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(18, 210);
+            btnAdd.Location = new Point(16, 183);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(94, 29);
             btnAdd.TabIndex = 21;
@@ -172,7 +172,7 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(118, 210);
+            btnEdit.Location = new Point(116, 183);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(94, 29);
             btnEdit.TabIndex = 22;
@@ -182,7 +182,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(222, 210);
+            btnDelete.Location = new Point(220, 183);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 23;
@@ -192,7 +192,7 @@
             // 
             // btnDelSG
             // 
-            btnDelSG.Location = new Point(228, 581);
+            btnDelSG.Location = new Point(226, 554);
             btnDelSG.Name = "btnDelSG";
             btnDelSG.Size = new Size(94, 29);
             btnDelSG.TabIndex = 30;
@@ -202,7 +202,7 @@
             // 
             // btnSGEdit
             // 
-            btnSGEdit.Location = new Point(124, 581);
+            btnSGEdit.Location = new Point(122, 554);
             btnSGEdit.Name = "btnSGEdit";
             btnSGEdit.Size = new Size(94, 29);
             btnSGEdit.TabIndex = 29;
@@ -212,7 +212,7 @@
             // 
             // btnSGAdd
             // 
-            btnSGAdd.Location = new Point(24, 581);
+            btnSGAdd.Location = new Point(22, 554);
             btnSGAdd.Name = "btnSGAdd";
             btnSGAdd.Size = new Size(94, 29);
             btnSGAdd.TabIndex = 28;
@@ -224,7 +224,7 @@
             // 
             lblSG.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblSG.ForeColor = SystemColors.Control;
-            lblSG.Location = new Point(58, 353);
+            lblSG.Location = new Point(56, 326);
             lblSG.Name = "lblSG";
             lblSG.Size = new Size(204, 31);
             lblSG.TabIndex = 31;
@@ -236,7 +236,7 @@
             pieChart1.ForeColor = SystemColors.Control;
             pieChart1.InitialRotation = 0D;
             pieChart1.IsClockwise = true;
-            pieChart1.Location = new Point(58, 387);
+            pieChart1.Location = new Point(56, 360);
             pieChart1.MaxAngle = 360D;
             pieChart1.MaxValue = null;
             pieChart1.MinValue = 0D;

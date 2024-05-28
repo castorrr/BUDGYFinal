@@ -50,6 +50,7 @@ namespace BUDGY_2._0
             int ID = GlobalVariables.UserID;
             string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\cprogs\\OOP2\\BUDGY 2.0\\bin\\Debug\\BUDGY DATABASE.accdb";
             string query = "SELECT Budget FROM Budget WHERE ID = @UserID";
+            string query1 = "SELECT Budget, DATE FROM BudgetHistory WHERE ID = @UserID";
 
             lblRemBudget.Text = GlobalVariables.RemBudget.ToString("C");
 
@@ -73,7 +74,7 @@ namespace BUDGY_2._0
                     }
                 }
 
-                using (OleDbDataAdapter da = new OleDbDataAdapter(query, connection))
+                using (OleDbDataAdapter da = new OleDbDataAdapter(query1, connection))
                 {
                     da.SelectCommand.Parameters.AddWithValue("@UserID", ID);
 
