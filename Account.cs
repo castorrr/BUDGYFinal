@@ -50,7 +50,7 @@ namespace BUDGY_2._0
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             using (OleDbCommand command = new OleDbCommand(query, connection))
             {
-                // Add parameter
+                // Add parameters
                 command.Parameters.AddWithValue("@UserID", GlobalVariables.UserID);
 
                 connection.Open();

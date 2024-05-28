@@ -10,6 +10,7 @@ namespace BUDGY_2._0
     {
         protected override void OnPaint(PaintEventArgs pe)
         {
+            //
             GraphicsPath grpath = new GraphicsPath();
             grpath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
             this.Region = new System.Drawing.Region(grpath);

@@ -147,7 +147,7 @@ namespace BUDGY_2._0
                     // Bind data to DataGridView
                     dgvGoals.DataSource = ds.Tables["SavingGoals"];
 
-                    // Optionally, you can also set other properties such as AutoResizeColumnsMode
+                    // Optionally, you can also set other properties such as AutoResizeColumnsModel
                     dgvGoals.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     //format
                     dgvGoals.Columns["Price"].DefaultCellStyle.Format = "C";

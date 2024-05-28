@@ -108,6 +108,7 @@ namespace BUDGY_2._0
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //confimation
             DialogResult result = MessageBox.Show("Are you sure you want to delete the value?", "Confirmation", MessageBoxButtons.OKCancel);
 
             if (result == DialogResult.OK)

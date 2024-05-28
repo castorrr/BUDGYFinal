@@ -79,7 +79,7 @@ namespace BUDGY_2._0
             if (tbxPass.Text == tbxConfirmPass.Text)
             {
                 string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\cprogs\\OOP2\\BUDGY 2.0\\bin\\Debug\\BUDGY DATABASE.accdb";
-                string queryCheckUsername = "SELECT COUNT(*) FROM Accounts WHERE Username = @UName"; // Query to check if the username exists
+                string queryCheckUsername = "SELECT COUNT(*) FROM Accounts WHERE Username = @UName"; // Query to check if the username exist
 
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
                 {

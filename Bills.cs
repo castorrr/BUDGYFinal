@@ -143,7 +143,7 @@ namespace BUDGY_2._0
             if (result == DialogResult.OK)
             {
                 string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\cprogs\\OOP2\\BUDGY 2.0\\bin\\Debug\\BUDGY DATABASE.accdb";
-                string queryGetBill = "SELECT Price FROM Bills WHERE BillID = @BillID"; // Query to get the selected bill's price
+                string queryGetBill = "SELECT Price FROM Bills WHERE BillID = @BillID"; // Query to get the selected bill's prices
                 string queryPay = "INSERT INTO PaidBills (ID, Name, Price, [Date]) VALUES (@ID, @Name, @Price, @DueDate)";
                 string queryDeleteBill = "DELETE FROM Bills WHERE BillID = @BillID";
 

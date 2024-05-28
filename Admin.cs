@@ -112,7 +112,7 @@ namespace BUDGY_2._0
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
-                MessageBox.Show("Query: " + query); // Add this line
+                MessageBox.Show("Query: " + query); 
             }
 
             load();

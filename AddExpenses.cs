@@ -25,6 +25,7 @@ namespace BUDGY_2._0
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //adding
             string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\cprogs\\OOP2\\BUDGY 2.0\\bin\\Debug\\BUDGY DATABASE.accdb";
             try
             {

@@ -20,7 +20,7 @@ namespace BUDGY_2._0
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            //so that the user can see the password
+            //so that the user can see the passwordl
             if (cbxShow.Checked)
                 tbxPassword.PasswordChar = '\0';//null
             else
