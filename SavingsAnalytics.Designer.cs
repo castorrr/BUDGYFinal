@@ -3,7 +3,7 @@
     partial class SavingsAnalytics
     {
         /// <summary> 
-        /// Required designer variable.
+        /// Required designer variable
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -60,6 +60,7 @@
             lblTotal.TabIndex = 2;
             lblTotal.Text = "lblTotal";
             lblTotal.TextAlign = ContentAlignment.MiddleLeft;
+            lblTotal.Click += lblTotal_Click;
             // 
             // SavingsAnalytics
             // 

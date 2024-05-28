@@ -13,7 +13,7 @@ namespace BUDGY_2._0
             GraphicsPath grpath = new GraphicsPath();
             grpath.AddEllipse(0, 0, ClientSize.Width, ClientSize.Height);
             this.Region = new System.Drawing.Region(grpath);
-            base.OnPaint(pe);
+            base.OnPaint(pe);//
         }
     }
 }

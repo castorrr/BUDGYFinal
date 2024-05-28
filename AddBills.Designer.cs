@@ -3,7 +3,7 @@
     partial class AddBills
     {
         /// <summary>
-        /// Required designer variable.
+        /// Required designer variable
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
