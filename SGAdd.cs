@@ -39,7 +39,7 @@ namespace BUDGY_2._0
                 {
                     connection.Open();
 
-                    // Check if the user exist
+                    // Check if the user exists
                     string checkQuery = "SELECT COUNT(*) FROM Savings WHERE ID = @ID";
                     using (OleDbCommand checkCommand = new OleDbCommand(checkQuery, connection))
                     {

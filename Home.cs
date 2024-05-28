@@ -54,7 +54,7 @@ namespace BUDGY_2._0
                 // Set the radius for rounded corners based on the panel's size
                 int radius = Math.Min(panel.Width, panel.Height) / 4; // Adjust the divisor for different corner roundness
 
-                // Create a graphics path for rounded cornersl
+                // Create a graphics path for rounded corners
                 GraphicsPath path = new GraphicsPath();
                 path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
                 path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
@@ -280,7 +280,7 @@ namespace BUDGY_2._0
                 .AddValue(GlobalVariables.percentage)
                 .BuildSeries();
 
-            // Set the label color to white for the created seriesp
+            // Set the label color to white for the created series
             foreach (var series in pieChart2.Series)
             {
                 if (series is PieSeries<ObservableValue> pieSeries)

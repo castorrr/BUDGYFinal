@@ -17,12 +17,12 @@ namespace BUDGY_2._0
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+            // Timer tick event handler logic
         }
 
         private void cartesianChart1_Load(object sender, EventArgs e)
         {
-            
+            // Method invoked when the cartesianChart1 is loaded
         }
 
         private void button1_Click(object sender, EventArgs e)

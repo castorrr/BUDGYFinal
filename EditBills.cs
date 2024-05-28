@@ -115,7 +115,7 @@ namespace BUDGY_2._0
                     command.Parameters.AddWithValue("@N", tbxName.Text);
                     command.Parameters.AddWithValue("@P", tbxPrice.Text);
                     command.Parameters.AddWithValue("@D", dtpDate.Value.ToString("MM/dd/yyyy"));
-                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserIDs
+                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserID
                     command.Parameters.AddWithValue("@BID", billID);
                     command.ExecuteNonQuery();
                 }

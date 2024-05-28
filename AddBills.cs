@@ -37,7 +37,7 @@ namespace BUDGY_2._0
                 {
                     command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserID
                     command.Parameters.AddWithValue("@Name", tbxName.Text); // Add the parameter for bill's name
-                    command.Parameters.AddWithValue("@Price", Convert.ToDouble(tbxPrice.Text)); // Convert price to doubles
+                    command.Parameters.AddWithValue("@Price", Convert.ToDouble(tbxPrice.Text)); // Convert price to double
                     command.Parameters.AddWithValue("@DueDate", dtpDue.Value.Date); // Use only date part
 
                     command.ExecuteNonQuery();

@@ -34,7 +34,7 @@ namespace BUDGY_2._0
                     myConn.Open();
                     da.Fill(ds, "Inquiry");
 
-                    // Clear existing columns before binding datas
+                    // Clear existing columns before binding data
                     dgvInquiry.Columns.Clear();
 
                     // Bind data to DataGridView

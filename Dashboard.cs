@@ -138,7 +138,7 @@ namespace BUDGY_2._0
                         }
                         else
                         {
-                            // No image path found, handle this case accordingly (e.g., display a default image)s
+                            // No image path found, handle this case accordingly (e.g., display a default image)
                             // For example:
                             return;
                         }

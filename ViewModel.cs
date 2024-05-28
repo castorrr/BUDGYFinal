@@ -17,7 +17,7 @@ namespace ViewModelsSamples.Bars.Spacing
 
         public ViewModel()
         {
-            // Initialize the Series array with series for each monthl
+            // Initialize the Series array with series for each month
             InitializeSeries();
         }
 

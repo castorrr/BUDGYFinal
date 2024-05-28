@@ -37,7 +37,7 @@ namespace BUDGY_2._0
 
                     while (reader.Read())
                     {
-                        decimal expensePrice = reader.GetDecimal(0); // Assuming ExpensesPrice is stored as a Decimal in the databalse
+                        decimal expensePrice = reader.GetDecimal(0); // Assuming ExpensesPrice is stored as a Decimal in the database
                         totalSavings += expensePrice;
                     }
 

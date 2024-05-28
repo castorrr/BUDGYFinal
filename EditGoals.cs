@@ -88,7 +88,7 @@ namespace BUDGY_2._0
                 {
                     command.Parameters.AddWithValue("@E", tbxName.Text);
                     command.Parameters.AddWithValue("@EP", tbxPrice.Text);
-                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserIDs
+                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserID
                     command.Parameters.AddWithValue("@goalsID", savingGoalsID);
                     command.ExecuteNonQuery();
                 }

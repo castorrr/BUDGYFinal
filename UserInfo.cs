@@ -39,7 +39,7 @@ namespace BUDGY_2._0
                     // Bind data to DataGridView
                     dgvUser.DataSource = ds.Tables["UserInfo"];
 
-                    // Optionally, you can also set other properties such as AutoResizeColumnsModes
+                    // Optionally, you can also set other properties such as AutoResizeColumnsMode
                     dgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
                     myConn.Close();

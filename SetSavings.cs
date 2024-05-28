@@ -43,7 +43,7 @@ namespace BUDGY_2._0
                         checkCommand.Parameters.AddWithValue("@ID", userID);
                         int userCount = Convert.ToInt32(checkCommand.ExecuteScalar());
 
-                        if (userCount > 0) // User exists, update existing savingss
+                        if (userCount > 0) // User exists, update existing savings
                         {
                             string updateQuery = "UPDATE Savings SET Savings = Savings + @savingsToAdd WHERE ID = @ID";
                             using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))

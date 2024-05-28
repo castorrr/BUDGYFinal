@@ -30,7 +30,7 @@ namespace BUDGY_2._0
 
                 using (OleDbCommand command = new OleDbCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserIDs
+                    command.Parameters.AddWithValue("@ID", ID); // Add the parameter for UserID
                     command.Parameters.AddWithValue("@N", tbxName.Text);
                     command.Parameters.AddWithValue("@P", Convert.ToInt32(tbxPrice.Text));
                     command.ExecuteNonQuery();

@@ -89,7 +89,7 @@ namespace BUDGY_2._0
                 if (remainingBudget < 0)
                 {
                     MessageBox.Show("The expense exceeds the remaining budget.");
-                    return; // Exit the method without executing the INSERT querys
+                    return; // Exit the method without executing the INSERT query
 
                 }
 

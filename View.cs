@@ -32,7 +32,7 @@ namespace BUDGY_2._0
             {
                 Series = viewModel.Series,
 
-                // out of livecharts properties....
+                // out of livecharts properties...
                 Location = new System.Drawing.Point(0, 0),
                 Size = new System.Drawing.Size(50, 50),
                 Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom

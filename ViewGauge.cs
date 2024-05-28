@@ -12,7 +12,7 @@ namespace ViewModelsSamples.Pies.Gauge1
 
         public ViewGauge()
         {
-            // Initialize the Series property dynamically inside the constructors
+            // Initialize the Series property dynamically inside the constructor
             Series = GaugeGenerator.BuildSolidGauge(
                 new GaugeItem(
                     Percentage,

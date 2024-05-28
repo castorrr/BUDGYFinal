@@ -27,7 +27,7 @@ namespace BUDGY_2._0
            int nRightRect,    // x-coordinate of lower-right corner
            int nBottomRect,   // y-coordinate of lower-right corner
            int nWidthEllipse, // height of ellipse
-           int nHeightEllipse // width of ellipses
+           int nHeightEllipse // width of ellipse
        );
         public Set()
         {
